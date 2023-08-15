@@ -1,0 +1,16 @@
+{
+    "name":"vhp-collateral",
+    "port":7000,
+    "dev":true,
+    "upstreams":{
+      "STORE":{"name":"STORE","group":"MART","type":"server","options":{
+        "hostname":"localhost",
+        "port":"8080",
+        "method":"POST",
+        "headers":{
+          "Content-Type":"application/json"
+        }
+      }}
+    }
+  }
+  

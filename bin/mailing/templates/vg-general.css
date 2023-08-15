@@ -1,0 +1,49 @@
+/* General Rules */
+:root{
+  --BEE-blue: rgb(15,70,119);
+  --BEE-mblue: rgb(41,137,195);
+  --BEE-grey: rgb(103,104,103);
+
+  --vogel-blue: rgb(33, 57, 130);
+  --vogel-red: rgb(230,0,0);
+
+  --BCE-green: rgb(107, 164, 58);
+
+  --background-base: white;
+  --background-light: rgb(229,229,253);
+  --background-med: rgb(196, 209, 253);
+  --background-dark:rgb(112, 128, 157);
+
+  --highlight-color:rgb(196, 209, 253);
+
+  --text-light: white;
+  --text-dark: rgb(73,73,73);
+
+  --border-color-1:rgb(126, 126, 126);
+
+  --warning-highlight:rgba(255, 100, 100, 1);
+  --hover-highlight:rgba(255, 252, 62, 0.637);
+
+  --excluded-border:rgb(125, 40, 40);
+  --excluded-background:rgb(225, 180, 180);
+  --included-border:rgb(40, 125, 40);
+  --included-background:rgb(180, 225, 180);
+
+}
+*{
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  user-select:none;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+body:hover{
+  cursor: default;
+}
+div::selection{
+  background: transparent;
+}
+.test{
+  height:300px;
+}
