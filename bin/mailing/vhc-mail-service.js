@@ -201,9 +201,11 @@ class VGMailer{
 async function PRINTpdf(html){
   const browser = await puppeteer.launch({
     headless:true,
-    args: ['--font-render-hinting=none']
+    args: ['--font-render-hinting=small']
   });
   const page = await browser.newPage();
+  await page.setUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36");
+
   await page.setContent(html,{waitUntil:'networkidle0'});
   const pdf = await page.pdf({format:'Letter',printBackground:true, margin:{
     top: "0.4in",
