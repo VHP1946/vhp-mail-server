@@ -176,7 +176,7 @@ class VGMailer{
                 attachments.push({
                   filename:rpack.attach[x].filename+'.pdf',
                   path:pdftempfile,
-                  contentType:rpack.attach[x].type||'application/pdf'
+                  contentType:rpack.attach[x].contentType && rpack.attach[x].contenType != '' ? rpack.attach[x].contenType:'application/pdf'
                 });
                 haveattach++;
                 if(haveattach===toattach){
