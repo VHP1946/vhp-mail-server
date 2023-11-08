@@ -14,7 +14,7 @@ class VGMailer{
     this.accounts={
       "yourhomereport":{
         user:'YourHomeReport@vogelheating.com',
-        pass:'VogelHomeReport!'
+        pass:'VogelTicketReport!'
       },
       "confirmations":{
         user:'confirmations@vogelheating.com',
