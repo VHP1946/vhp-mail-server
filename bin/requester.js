@@ -15,7 +15,7 @@ module.exports=(req,res,data)=>{
         switch(data.access.request.toUpperCase()){
             case 'MAIL':{
                 console.log('Mail Service');
-                return resolve(DynaMail(data.pack));
+                return resolve(DynaMail(data));
             }
             default:{
                 return resolve({success:false,msg:'bad request'})
