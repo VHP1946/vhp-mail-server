@@ -12,7 +12,7 @@ const {DynaMail} = require('./mailing/vhc-mail-service.js');
 
 module.exports=(req,res,data)=>{
     return new Promise((resolve,reject)=>{
-        switch(data.access.request.toUpperCase()){
+        switch(data.request.toUpperCase()){
             case 'MAIL':{
                 console.log('Mail Service');
                 return resolve(DynaMail(data));
